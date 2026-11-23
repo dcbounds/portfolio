@@ -377,3 +377,5 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 @media(prefers-reduced-motion:reduce){.live{animation:none}}
 /* project media stays inside the 672px column like the text and buttons */
 .proj img[class^=wide9],.proj .wide937,.projects img.wide937{width:100%;max-width:100%;left:auto;transform:none;align-self:stretch;height:auto}
+/* The Last Carrot already carries its own shadow */
+.projects img.wide937{box-shadow:none;border-radius:0}
