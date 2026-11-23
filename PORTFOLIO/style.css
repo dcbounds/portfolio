@@ -693,3 +693,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .ba-stage{width:100%}
 .ba .cap{display:block;width:auto}
 #p-search .glance{margin-top:64px}
+.card.grad .bg{object-fit:cover;object-position:50% 40%}
