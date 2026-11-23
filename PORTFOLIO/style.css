@@ -528,3 +528,9 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .cms .ExpandableDescription__toggle--floating{background:#fff}
 @media(min-width:900px){.cmpx:has(.SearchPage__chips),.cmpx:has(.DatasetResultV2){grid-template-columns:1fr;gap:28px}.cmpx:has(.SearchPage__chips) .cstage,.cmpx:has(.DatasetResultV2) .cstage{order:0}}
 .cstage.cms-stage{justify-content:center}
+.cms p{margin:0!important;padding:0!important}
+.cms .ExpandableDescription__text--collapsed{max-height:none}
+.cms .ExpandableDescription__text--collapsed p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font:400 15px/22px Rubik,sans-serif;color:#212121}
+.cms button.DatasetResultV2__quickLink,.cms .DatasetResultV2__quickLink span{font:500 14px/24px Rubik,sans-serif}
+.cms .SearchResultsTabsV2__tab{font:400 14px/16.1px Rubik,sans-serif}
+.cms .SearchResultsTabsV2__tab.is-active{font-weight:500}
