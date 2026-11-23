@@ -401,3 +401,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .card:hover .ct,.card:focus-visible .ct,.card.open .ct{opacity:0;transform:translateY(-6px)}
 .card:hover .plus,.card:focus-visible .plus,.card.open .plus{transform:rotate(45deg);background:rgba(255,255,255,.3)}
 @media(prefers-reduced-motion:reduce){.card .story,.card .ct,.card .plus{transition:none}}
+.card .story{-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.74) 70%)}
