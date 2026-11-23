@@ -712,3 +712,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .exp .job.reached::before{transform:translate(-50%,-50%);width:18px;height:18px}
 .spine{margin-left:-1px}
 @media(max-width:700px){.exp{--sx:-20px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
+@media(max-width:700px){.exp{--sx:-10px}.exp .job{padding-left:12px}}
