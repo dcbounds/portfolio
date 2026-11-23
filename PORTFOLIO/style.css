@@ -264,3 +264,17 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 .js .rv:not(img){transform:translateY(18px)}
 .js .rv.in{opacity:1}.js .rv.in:not(img){transform:none}
 @media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+/* data.cms.gov case study */
+.kpis{align-items:stretch}
+.kpi{justify-content:space-between;min-height:150px}
+.kpi b{white-space:nowrap}
+.kpi b small{font:600 .42em/1 "Source Sans 3";letter-spacing:0;margin-left:4px;color:var(--g1)}
+.pnh{padding-top:24px}
+.gal{margin:24px 0 0}
+.gal .cap{margin-top:12px}
+.gal2{display:grid;grid-template-columns:355fr 630fr;gap:24px;margin-top:32px;align-items:start}
+.gal2 img{margin-top:0}
+.gal2 p.cap{margin-top:12px}
+.full.drawer{width:min(100%,360px);margin-inline:auto}
+@media(max-width:700px){.gal2{grid-template-columns:1fr;gap:28px}.kpi{min-height:0}}
+.gal{width:min(880px,calc(100vw - 2*var(--pad)));position:relative;left:50%;transform:translateX(-50%)}
