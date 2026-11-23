@@ -414,3 +414,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 /* dot + label grouped */
 .status{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
 .status .live{margin:0}
+.card .plus{display:none}
