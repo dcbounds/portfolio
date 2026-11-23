@@ -379,3 +379,12 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 .proj img[class^=wide9],.proj .wide937,.projects img.wide937{width:100%;max-width:100%;left:auto;transform:none;align-self:stretch;height:auto}
 /* The Last Carrot already carries its own shadow */
 .projects img.wide937{box-shadow:none;border-radius:0}
+/* vertical rhythm: tighter, even spacing on the home page */
+body.home .hero{padding-top:clamp(56px,10vw,128px)}
+body.home .ai{margin-top:clamp(64px,8vw,96px)}
+body.home .know{margin-top:clamp(72px,9vw,112px)}
+body.home .projects{margin-top:clamp(72px,9vw,112px)}
+body.home .proj+.proj{margin-top:clamp(80px,10vw,128px)}
+body.home .exp{margin-top:clamp(80px,10vw,128px)}
+.ai h2{font-size:clamp(34px,4.6vw,56px);max-width:12em}
+.ai-grid{margin-top:40px}
