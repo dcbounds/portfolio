@@ -363,3 +363,11 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 /* page transitions */
 @view-transition{navigation:auto}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.35s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+/* align AI band to the home column */
+.ai-in{max-width:672px}
+.ai-grid{grid-template-columns:1fr;gap:12px;margin-top:48px}
+.ai-grid article{display:grid;grid-template-columns:36px 150px 1fr;align-items:start;gap:0 12px;min-height:0;padding:24px 28px;border-radius:var(--r-md)}
+.ai-grid h3{margin:0;padding:0;font-size:22px}
+.ai-grid p{margin-top:2px}
+.ai-n{padding-top:6px}
+@media(max-width:700px){.ai-grid article{grid-template-columns:1fr;gap:6px}.ai-n{padding:0}.ai-grid p{margin-top:4px}}
