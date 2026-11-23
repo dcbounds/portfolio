@@ -371,3 +371,7 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 .ai-grid p{margin-top:2px}
 .ai-n{padding-top:6px}
 @media(max-width:700px){.ai-grid article{grid-template-columns:1fr;gap:6px}.ai-n{padding:0}.ai-grid p{margin-top:4px}}
+/* availability dot in code */
+.ctas img{animation:none;margin-right:0}
+.live{position:relative;width:12px;height:12px;border-radius:50%;background:#61cf00;flex:none;margin:0 -4px 0 8px;animation:ping 2.2s cubic-bezier(.2,.7,.2,1) infinite}
+@media(prefers-reduced-motion:reduce){.live{animation:none}}
