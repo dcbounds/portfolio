@@ -415,3 +415,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .status{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
 .status .live{margin:0}
 .card .plus{display:none}
+.card .story{align-items:flex-start;padding:28px 24px;background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.74) 70%)}
