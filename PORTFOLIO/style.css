@@ -341,3 +341,9 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
 .chk b{display:block;font:700 18px/1.2 "Source Sans 3";color:var(--ink)}
 .chk li:last-child{background:var(--ink);color:#cfcfd4}.chk li:last-child b{color:#fff}
 @media(max-width:700px){.glance dl{grid-template-columns:1fr 1fr}.tabs{margin-top:48px}.glance{margin-top:48px}}
+/* screenshots are real components: no added frames or shadows */
+.shot{box-shadow:none;border-radius:0}
+.shot.hero-shot,.shot.drawer{border-radius:var(--r-md)}
+.gal2{grid-template-columns:385fr 640fr;gap:16px}
+.comp{border-radius:0;box-shadow:none}
+.comp.fade{-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
