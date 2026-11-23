@@ -388,3 +388,16 @@ body.home .proj+.proj{margin-top:clamp(80px,10vw,128px)}
 body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .ai h2{font-size:clamp(34px,4.6vw,56px);max-width:12em}
 .ai-grid{margin-top:40px}
+/* get to know me: story on hover */
+.card{outline-offset:-4px}
+.card.grad{background:radial-gradient(120% 90% at 20% 0%,#3d6b4f 0%,#1f3d2c 55%,#14261c 100%);color:#fff}
+.card .story{position:absolute;inset:0;display:flex;align-items:flex-end;padding:28px 24px 32px;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.78));-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);opacity:0;transform:translateY(8px);transition:opacity .45s var(--ease),transform .45s var(--ease);z-index:1;pointer-events:none}
+.card .story p{font:500 17px/1.5 Inter;letter-spacing:-.1px;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.3)}
+.card .ct{transition:opacity .35s var(--ease),transform .45s var(--ease);z-index:2}
+.card .plus{position:absolute;right:18px;top:18px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.22);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:3;transition:transform .45s var(--ease),background .3s}
+.card .plus::before,.card .plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:#fff;border-radius:2px}
+.card .plus::after{transform:rotate(90deg)}
+.card:hover .story,.card:focus-visible .story,.card.open .story{opacity:1;transform:none}
+.card:hover .ct,.card:focus-visible .ct,.card.open .ct{opacity:0;transform:translateY(-6px)}
+.card:hover .plus,.card:focus-visible .plus,.card.open .plus{transform:rotate(45deg);background:rgba(255,255,255,.3)}
+@media(prefers-reduced-motion:reduce){.card .story,.card .ct,.card .plus{transition:none}}
