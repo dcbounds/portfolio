@@ -56,11 +56,11 @@ h1{font:600 clamp(44px,7.7vw,96px)/1.2 Inter;color:var(--ink);text-wrap:balance}
 .ct{position:absolute;left:24px;right:24px;top:24px;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.25)}
 .ct .k{font:500 20px/normal Inter;letter-spacing:-.25px}
 .ct .b{font:700 24px/30px Inter;letter-spacing:.25px;margin-top:4px}
-.car-ctl{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:48px;width:min(100%,672px)}
+.car-ctl{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:20px;margin:48px auto 0;width:100%}
 .dots{display:flex;gap:8px}
 .dot{width:8px;height:8px;border-radius:8px;background:#d6d6db;transition:width .3s var(--ease),background .3s;padding:0}
 .dot.on{width:24px;background:var(--ink)}
-.car-ctl .btns{display:flex;gap:20px}
+.car-ctl .btns{display:contents}.car-ctl .car-btn[data-d=p]{order:1}.car-ctl .dots{order:2}.car-ctl .car-btn[data-d=n]{order:3}
 .car-btn{width:36px;height:36px;border-radius:18px;background:#e8e8ed;display:grid;place-items:center;transition:background .2s,opacity .2s,transform .2s}
 .car-btn:hover:not(:disabled){background:#d9d9e0;transform:scale(1.06)}
 .car-btn:disabled{opacity:.45;cursor:default}
