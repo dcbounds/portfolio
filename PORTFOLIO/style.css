@@ -521,3 +521,4 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .DatasetResultV2__metaValue p{font:400 16px/20px Rubik,sans-serif}
 .DatasetResultV2__metaSuffix{font-size:14px;margin-left:1px}
 @media(max-width:700px){.cms-stage{justify-content:flex-start}.SearchResultsTabsV2__tab{padding:0 12px}}
+.cms .SearchFiltersV2__l1ExpandBtn{color:#0071bc}.cms .DatasetResultV2__quickLink,.cms .ExpandableDescription__toggle--floating{color:#0071bc}.cms .SearchResultsTabsV2__tab.is-active{color:#0071bc}
