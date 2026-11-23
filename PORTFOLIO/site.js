@@ -9,7 +9,7 @@ function align(){if(h){var l=Math.max(0,Math.round(start()-wrap.getBoundingClien
 function idx(){var s=c.scrollLeft;return s>=maxL()-2&&maxL()>0?cards.length-1:Math.max(0,Math.min(cards.length-1,Math.round(s/step())))}
 function upd(){var i=idx(),vr=c.getBoundingClientRect(),st=start();[].forEach.call(dots.children,function(d,j){d.classList.toggle("on",j===i);d.setAttribute("aria-current",j===i?"true":"false")});
 cards.forEach(function(k){var r=k.getBoundingClientRect();k.classList.toggle("on",r.left>=st-12&&r.right<=vr.right+2)});
-btns[0].disabled=c.scrollLeft<4;btns[1].disabled=c.scrollLeft>=maxL()-4}
+if(btns.length){btns[0].disabled=c.scrollLeft<4;btns[1].disabled=c.scrollLeft>=maxL()-4}}
 btns.forEach(function(b){b.addEventListener("click",function(){var d=b.dataset.d==="n"?1:-1;go(idx()+d)})});
 var tick=false;c.addEventListener("scroll",function(){if(tick)return;tick=true;requestAnimationFrame(function(){tick=false;upd()})},{passive:true});
 function relayout(){align();upd()}window.addEventListener("resize",relayout);
