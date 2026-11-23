@@ -534,3 +534,11 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .cms button.DatasetResultV2__quickLink,.cms .DatasetResultV2__quickLink span{font:500 14px/24px Rubik,sans-serif}
 .cms .SearchResultsTabsV2__tab{font:400 14px/16.1px Rubik,sans-serif}
 .cms .SearchResultsTabsV2__tab.is-active{font-weight:500}
+/* one page margin system: 672 text column, 880 media, shared side margins on tablet */
+.col,body.home .col{max-width:672px}
+.ai-in{max-width:672px}
+@media(max-width:1000px){
+ :root{--pad:clamp(20px,5.5vw,56px)}
+ .col,body.home .col,.wide,.xwide,.ai-in,.case .ft .col{max-width:none}
+ .car-wrap{--start:var(--pad)}
+}
