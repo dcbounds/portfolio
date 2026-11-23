@@ -251,3 +251,17 @@ h3.plat .live{display:inline-block;vertical-align:middle;margin-left:10px;paddin
   .badge p{font-size:16px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* polish: one media system (radius, shadow, width) used on every page */
+:root{--r-lg:28px;--r-md:20px;--sh-media:0 1px 2px rgba(0,0,0,.06),0 12px 24px -10px rgba(0,0,0,.14),0 32px 56px -28px rgba(0,0,0,.22)}
+.projects img.wide956,.projects img.wide937{border-radius:var(--r-lg);box-shadow:var(--sh-media)}
+.projects img.wide937{width:min(956px,calc(100vw - 2*var(--pad)))}
+.projects .p2 .pimg{border-radius:var(--r-lg);box-shadow:var(--sh-media)}
+.hero800,.hero560,.hero540,.full,.bleed{border-radius:var(--r-md)}
+.shot{border-radius:var(--r-md);border:0;box-shadow:var(--sh-media)}
+.kpis>*{border-radius:var(--r-md)}
+/* scroll reveal (only active when JS adds .js) */
+.js .rv{opacity:0;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv:not(img){transform:translateY(18px)}
+.js .rv.in{opacity:1}.js .rv.in:not(img){transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
