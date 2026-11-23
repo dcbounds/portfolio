@@ -411,3 +411,6 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 /* more space between AI row title and paragraph */
 .ai-grid article{column-gap:28px}
 @media(max-width:700px){.ai-grid article{column-gap:0}}
+/* dot + label grouped */
+.status{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.status .live{margin:0}
