@@ -454,3 +454,6 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .st small{display:block;font:500 13px/1.2 "Nunito Sans";color:#6b6b73;margin-bottom:6px}
 .st span{font:500 17px/1.2 "Nunito Sans"}
 @media(min-width:900px){.cmpx{grid-template-columns:1.15fr 1fr;align-items:center;gap:40px}.cmpx:nth-child(even) .cstage{order:2}}
+.cstage img{display:block;width:100%;height:auto;border-radius:var(--r-md);box-shadow:none}
+.cstage:has(img[src*="filters"]) img{max-width:340px}
+.cstage:has(img[src*="chips"]) img,.cstage:has(img[src*="card"]) img{max-width:640px}
