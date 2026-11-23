@@ -457,3 +457,67 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .cstage img{display:block;width:100%;height:auto;border-radius:var(--r-md);box-shadow:none}
 .cstage:has(img[src*="filters"]) img{max-width:340px}
 .cstage:has(img[src*="chips"]) img,.cstage:has(img[src*="card"]) img{max-width:640px}
+/* Data.CMS.gov components rebuilt from the live site's markup and computed styles */
+.cms-stage{background:#f5f7f9;font-family:Rubik,sans-serif;color:#1b1b1b;overflow-x:auto}
+.cms-stage img{display:none}
+.cms,.cms *{box-sizing:border-box;font-family:Rubik,sans-serif;margin:0;padding:0}
+.cms button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;text-align:left}
+.cms ul{list-style:none}
+.cms svg{display:block;flex:none}
+.cms a{text-decoration:none}
+.SearchFiltersV2{width:358px;max-width:100%;background:#fff;border-radius:16px;box-shadow:0 2px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;flex:none}
+.SearchFiltersV2__header{padding:31px 0 16px;margin:0 36px;border-bottom:1px solid #e1e7ee}
+.SearchFiltersV2__header h2{font:600 20px/24px Montserrat,sans-serif;color:#212121}
+.SearchFiltersV2__body{padding:12px 0 36px;margin:0 36px;display:flex;flex-direction:column}
+.SearchFiltersV2__section{border-bottom:1px solid #e1e7ee;padding-bottom:20px;margin-bottom:20px}
+.SearchFiltersV2__section.is-last{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.SearchFiltersV2__sectionHeader{display:flex;width:100%;align-items:center;justify-content:space-between;margin-bottom:20px;height:28px}
+.SearchFiltersV2__sectionTitle{font:500 16px/20px Rubik,sans-serif;color:#212121}
+.SearchFiltersV2__expandIcon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;color:#0071bc}
+.SearchFiltersV2__expandIcon svg,.SearchFiltersV2__l1ExpandBtn svg{width:22px;height:22px}
+.SearchFiltersV2__expandIcon.up svg{transform:rotate(180deg)}
+.SearchFiltersV2__options{display:flex;flex-direction:column;gap:12px}
+.SearchFiltersV2__l1Row{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.SearchFiltersV2__checkboxRow{display:grid;grid-template-columns:20px 1fr;column-gap:8px;align-items:start;flex:1;cursor:pointer}
+.SearchFiltersV2__l1ExpandBtn{display:flex;width:28px;height:28px;align-items:center;justify-content:center;color:#0071bc;margin-top:-3px}
+.Checkbox{position:relative;width:20px;height:20px;margin-top:2px;display:block}
+.Checkbox input{position:absolute;opacity:0;width:20px;height:20px;margin:0;cursor:pointer}
+.Checkbox__custom{position:absolute;inset:0;background:#fff;border:1px solid #aeb0b5;border-radius:2px;transition:background .15s,border-color .15s}
+.Checkbox input:checked+.Checkbox__custom{background:#0071bc;border-color:#0071bc}
+.Checkbox input:checked+.Checkbox__custom::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.Checkbox input:focus-visible+.Checkbox__custom{outline:2px solid #0071bc;outline-offset:2px}
+.SearchFiltersV2__optionLabel{font:400 15px/20px Rubik,sans-serif;color:#212121;padding-top:2px}
+.SearchFiltersV2__count{margin-left:4px;color:#5b616a}
+.SearchPage__chips{width:640px;max-width:100%}
+.SearchResultsTabsV2{display:flex;flex-wrap:wrap;gap:4px;padding-bottom:2px;margin-bottom:14px}
+.SearchResultsTabsV2__tab{display:flex;gap:2px;align-items:center;justify-content:center;height:36px;padding:0 22px 0 21px;background:#fff;border:2px solid #d6d7d9;border-radius:4px;font:400 14px/16.1px Rubik,sans-serif;color:#212121;transition:border-color .2s}
+.SearchResultsTabsV2__tab:hover{border-color:#8d9096}
+.SearchResultsTabsV2__tab.is-active{background:#e6f4fb;border-color:#0071bc;color:#0071bc;font-weight:500}
+.SearchResultsTabsV2__label{font-size:14px;display:flex}
+.SearchPageFiltersDisplay__container{display:flex;align-items:center;justify-content:space-between;margin:20px 0 12px;gap:12px}
+.SearchPage__results-text{font:500 20px/24px Montserrat,sans-serif;color:#212121}
+.SearchPage__results-text span{font-family:Montserrat,sans-serif;font-weight:600}
+.SortDropdownV2__toggle{display:inline-flex;gap:5px;align-items:center;font:400 16px/1.2 Rubik,sans-serif;color:#212121;white-space:nowrap}
+.SortDropdownV2__label{font-weight:500}
+.SortDropdownV2__divider{font-size:14px;color:#9aa3ad}
+.SortDropdownV2__caret{width:12px;height:12px}
+.DatasetResultV2{width:640px;max-width:100%;background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);padding:24px;display:flex;flex-direction:column;overflow:hidden}
+.DatasetResultV2__type{font:500 13px/18px Rubik,sans-serif;letter-spacing:.78px;text-transform:uppercase;color:#5b616a;margin-bottom:8px}
+.DatasetResultV2__titleLink{display:block;margin-bottom:12px}
+.DatasetResultV2__title{font:500 22px/28px Montserrat,sans-serif;color:#0071bc}
+.DatasetResultV2__desc{position:relative;font:400 15px/22px Rubik,sans-serif;color:#212121}
+.ExpandableDescription__text--collapsed{max-height:66px;overflow:hidden}
+.ExpandableDescription__text--collapsed p{font:400 15px/22px Rubik,sans-serif}
+.ExpandableDescription__toggle--floating{position:absolute;right:0;bottom:0;display:flex;gap:4px;align-items:center;background:#fff;padding-left:2px;font:500 15px/22px Rubik,sans-serif;color:#0071bc}
+.ExpandableDescription__toggleEllipsis{font-weight:400;color:#212121}
+.ExpandableDescription__toggle--floating svg{width:10px;margin-bottom:0}
+.DatasetResultV2__quickLinks{display:flex;gap:24px;margin-top:16px;flex-wrap:wrap}
+.DatasetResultV2__quickLink{display:flex;gap:8px;align-items:center;font:500 14px/24px Rubik,sans-serif;color:#0071bc}
+.DatasetResultV2__quickLink svg{width:12px;height:auto}
+.DatasetResultV2__meta{display:flex;flex-wrap:wrap;gap:24px 26px;border-top:1px solid #e1e7ee;padding-top:16px;margin-top:20px}
+.DatasetResultV2__metaItem{display:flex;flex-direction:column}
+.DatasetResultV2__metaLabel{font:400 12px/16px Rubik,sans-serif;color:#5b616a;margin-bottom:8px}
+.DatasetResultV2__metaValue{display:flex;gap:2px;align-items:baseline;font:400 16px/20px Rubik,sans-serif;color:#1a2026}
+.DatasetResultV2__metaValue p{font:400 16px/20px Rubik,sans-serif}
+.DatasetResultV2__metaSuffix{font-size:14px;margin-left:1px}
+@media(max-width:700px){.cms-stage{justify-content:flex-start}.SearchResultsTabsV2__tab{padding:0 12px}}
