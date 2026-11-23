@@ -694,3 +694,21 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .ba .cap{display:block;width:auto}
 #p-search .glance{margin-top:64px}
 .card.grad .bg{object-fit:cover;object-position:50% 40%}
+
+/* ===== polish: tab bar offset, drawer wireframe accuracy, timeline dots ===== */
+.tabs{top:auto}
+/* before: real drawer sits on the right, full height under the bar, square corners, dark navy */
+.ba-side{left:62%;top:0;bottom:0;width:38%;border-radius:0;background:#0e2a55;box-shadow:-24px 0 50px -8px rgba(0,0,0,.45);transition:left .65s var(--ease),top .65s var(--ease),bottom .65s var(--ease),width .65s var(--ease),border-radius .65s var(--ease),background .5s var(--ease),box-shadow .6s var(--ease)}
+.ba[data-mode=after] .ba-side{left:14px;top:14px;bottom:14px;width:34%;border-radius:12px;background:#fff}
+.ba-side b,.ba-g .h,.ba-g em,.ba-g span i{transition:background .5s var(--ease),border-color .5s var(--ease)}
+.ba[data-mode=before] .ba-side b{background:#fff}
+.ba[data-mode=before] .ba-g .h{background:rgba(255,255,255,.85)}
+.ba[data-mode=before] .ba-g em{border-color:rgba(255,255,255,.75)}
+.ba[data-mode=before] .ba-g span i{background:rgba(255,255,255,.28)}
+@keyframes baIn{from{transform:translateX(100%)}to{transform:none}}
+@media(max-width:560px){.ba-side{left:54%;width:46%}.ba[data-mode=after] .ba-side{left:14px;width:38%}}
+/* timeline: line centered on the dot, 8px clear gap around it */
+.exp .job::before{box-sizing:border-box;left:var(--sx);top:16px;width:12px;height:12px;margin:0;transform:translate(-50%,-50%);box-shadow:0 0 0 8px #fff;transition:width .45s var(--spring),height .45s var(--spring),background .3s,border-color .3s}
+.exp .job.reached::before{transform:translate(-50%,-50%);width:18px;height:18px}
+.spine{margin-left:-1px}
+@media(max-width:700px){.exp{--sx:-20px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
