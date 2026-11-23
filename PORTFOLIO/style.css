@@ -728,3 +728,16 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .ba-res{margin:14px}
 .ba[data-mode=after] .ba-side{top:calc(14px + 66px + 14px)}
 @media(max-width:560px){.ba-nl.g,.ba-nl:not(.g) i:nth-child(3){display:none}.ba[data-mode=after] .ba-side{top:94px}}
+/* chips: highlight must not fade the label; phone layout matches live data.cms.gov */
+.chip-pill{background:rgba(0,113,188,.1)}
+.SearchPageFiltersDisplay__filterSortBtn{display:none}
+@media(max-width:767px){
+.cms-stage{justify-content:flex-start}
+.cms.SearchPage__chips{width:100%;min-width:0}
+.SearchResultsTabsV2{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 calc(-1*clamp(20px,4vw,40px)) 14px;padding:0 clamp(20px,4vw,40px) 2px}
+.SearchResultsTabsV2::-webkit-scrollbar{display:none}
+.SearchResultsTabsV2__tab{flex:0 0 auto;white-space:nowrap}
+.SearchPageFiltersDisplay__container{flex-direction:column;align-items:stretch;gap:12px}
+.SortDropdownV2__toggle{display:none}
+.SearchPageFiltersDisplay__filterSortBtn{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;height:40px;padding:0 16px;border:1px solid #0766ac;border-radius:20px;background:transparent;color:#1675c1;font:500 16px/1 Rubik,sans-serif}
+}
