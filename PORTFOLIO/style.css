@@ -689,3 +689,7 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .nav details{position:relative}
 .menu a:hover{background:#f4f4f5}
 @media(prefers-reduced-motion:reduce){.nv-pill{transition:none}.nav details.opening .menu,.nav details.closing .menu{animation:none}}
+.ba{display:block!important;width:100%}
+.ba-stage{width:100%}
+.ba .cap{display:block;width:auto}
+#p-search .glance{margin-top:64px}
