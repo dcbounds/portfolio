@@ -408,3 +408,6 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .dot{width:8px;height:8px;position:relative}
 .dot::before{content:"";position:absolute;inset:-8px}
 .dot:hover:not(.on){background:#a9a9b0}
+/* more space between AI row title and paragraph */
+.ai-grid article{column-gap:28px}
+@media(max-width:700px){.ai-grid article{column-gap:0}}
