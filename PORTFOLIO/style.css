@@ -416,3 +416,41 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .status .live{margin:0}
 .card .plus{display:none}
 .card .story{align-items:flex-start;padding:28px 24px;background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.74) 70%)}
+/* rebuilt components */
+.cmps{display:grid;gap:56px;margin-top:48px;text-align:left}
+.cmpx{display:grid;gap:24px}
+.cstage{background:#f5f5f7;border-radius:var(--r-lg);padding:clamp(20px,4vw,40px);display:flex;justify-content:center;overflow:hidden}
+.ctext .cn{font:600 14px/1 Inter;color:#61cf00;letter-spacing:.04em;margin-bottom:10px}
+.ctext h3{font:700 clamp(24px,3vw,30px)/1.15 "Source Sans 3";letter-spacing:-.5px;margin:0}
+.ctext p:not(.cn){font:500 17px/1.55 "Nunito Sans";color:var(--g1);margin-top:12px}
+.cstage{--b:#005ea2;--tx:#1b1b1b;font-family:"Nunito Sans",sans-serif;color:var(--tx)}
+.cstage .cv{width:12px;height:8px;flex:none;color:#1b1b1b}
+.fl{background:#fff;border-radius:20px;padding:28px 28px 20px;width:100%;max-width:340px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.fl h4{font:700 22px/1.2 "Source Sans 3";padding-bottom:14px;border-bottom:1px solid #e3e3e6;margin:0}
+.fg{padding:6px 0 14px;border-bottom:1px solid #e3e3e6}.fg:last-child{border:0}
+.fh{display:flex;justify-content:space-between;align-items:center;padding:14px 0 10px;font:700 16px/1.2 "Source Sans 3"}
+.fh .cv{transform:rotate(180deg)}
+.o{display:flex;align-items:flex-start;gap:12px;padding:7px 0;font:500 15px/1.35 "Nunito Sans";cursor:pointer}
+.o input{position:absolute;opacity:0}
+.o i{width:20px;height:20px;border:1.5px solid #9a9aa2;border-radius:4px;flex:none;margin-top:1px;transition:all .2s}
+.o input:checked+i{background:var(--b);border-color:var(--b);box-shadow:inset 0 0 0 3px #fff}
+.o input:focus-visible+i{outline:2px solid var(--b);outline-offset:2px}
+.o span{flex:1}.o em{font-style:normal;color:#6b6b73}
+.o .cv{margin-top:6px}
+.cp{width:100%;max-width:640px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 15px/1 "Nunito Sans";padding:12px 16px;border:2px solid #d4d4d9;border-radius:6px;background:#fff;color:#1b1b1b;cursor:pointer;transition:all .2s}
+.chip:hover{border-color:#8a8a93}
+.chip.on{background:#e3f0fa;border-color:var(--b);color:var(--b)}
+.rs{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:22px;font:500 clamp(16px,2.2vw,20px)/1.3 "Source Sans 3"}
+.so{display:inline-flex;gap:6px;align-items:center;font-size:15px;white-space:nowrap}
+.dc{background:#fff;border-radius:20px;padding:28px;width:100%;max-width:640px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.dc .ty{font:700 13px/1 Inter;letter-spacing:.12em;text-transform:uppercase;color:#3d3d44;margin:0}
+.dc h4{font:600 clamp(22px,3vw,26px)/1.2 "Source Sans 3";color:var(--b);margin:10px 0 12px}
+.dc .ds{font:500 15px/1.55 "Nunito Sans";color:#1b1b1b;margin:0}
+.dc a{color:var(--b);font-weight:700;text-decoration:none}
+.ac{display:flex;flex-wrap:wrap;gap:8px 28px;margin:16px 0 20px;font:700 14px/1 "Nunito Sans"}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:14px;padding-top:18px;border-top:1px solid #e3e3e6}
+.st small{display:block;font:500 13px/1.2 "Nunito Sans";color:#6b6b73;margin-bottom:6px}
+.st span{font:500 17px/1.2 "Nunito Sans"}
+@media(min-width:900px){.cmpx{grid-template-columns:1.15fr 1fr;align-items:center;gap:40px}.cmpx:nth-child(even) .cstage{order:2}}
