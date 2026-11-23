@@ -590,3 +590,102 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .cb-link:hover{gap:12px}.cb-link:hover::after{transform:translateX(2px)}
 .ft{margin-top:0}
 .case .glance{margin-top:40px}
+
+/* ===== before / after toggle ===== */
+.ba{margin:48px 0 0;text-align:center}
+.ba-ctl{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;background:#ececf0;border-radius:100px;padding:4px}
+.ba-ctl button{position:relative;z-index:1;padding:11px 20px;font:500 14px/1 Inter;border-radius:100px;color:var(--g1);transition:color .3s;white-space:nowrap}
+.ba-ctl button[aria-pressed=true]{color:#fff}
+.ba-pill{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);background:#212121;border-radius:100px;transition:transform .55s cubic-bezier(.34,1.3,.64,1)}
+.ba[data-mode=after] .ba-pill{transform:translateX(100%)}
+.ba-stage{margin-top:20px;background:#f5f5f7;border-radius:var(--r-lg);padding:clamp(14px,3vw,28px);text-align:left}
+.ba-bar{display:flex;align-items:center;gap:12px;background:#fff;border-radius:12px 12px 0 0;padding:12px 14px;border-bottom:1px solid #e1e7ee}
+.ba-logo{width:56px;height:10px;border-radius:5px;background:#9fb3c8}
+.ba-search{flex:1;height:14px;border-radius:7px;background:#e8edf3}
+.ba-fbtn{font:600 12px/1 Inter;color:#0071bc;border:1.5px solid #0071bc;border-radius:6px;padding:7px 10px;transition:opacity .4s,transform .4s var(--ease)}
+.ba[data-mode=after] .ba-fbtn{opacity:.25;transform:scale(.94)}
+.ba-body{position:relative;overflow:hidden;background:#f5f7f9;border-radius:0 0 12px 12px;padding:14px;min-height:clamp(280px,40vw,360px)}
+.ba-res{display:grid;gap:10px;padding-left:0;transition:padding-left .65s var(--ease)}
+.ba[data-mode=after] .ba-res{padding-left:calc(34% + 12px)}
+.ba-card{background:#fff;border-radius:8px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.ba-card i{display:block;height:7px;border-radius:4px;background:#e1e7ee;margin-top:8px}
+.ba-card i.t{height:10px;width:46%;background:#8fb7da;margin-top:0}
+.ba-card i.s{width:70%}
+.ba-card .m{display:flex;gap:14px;margin-top:12px}.ba-card .m i{width:36px;height:6px;margin:0}
+.ba-side{position:absolute;z-index:3;left:14px;top:14px;bottom:14px;width:34%;background:#fff;border-radius:12px;padding:16px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.06),0 24px 50px -8px rgba(0,0,0,.38);transition:box-shadow .6s var(--ease)}
+.ba[data-mode=after] .ba-side{box-shadow:0 0 0 1px rgba(0,0,0,.05),0 2px 10px rgba(0,0,0,.08)}
+.ba[data-mode=before] .ba-side.go{animation:baIn .6s var(--ease)}
+@keyframes baIn{from{transform:translateX(-28px);opacity:0}to{transform:none;opacity:1}}
+.ba-side b{display:block;width:44%;height:10px;border-radius:5px;background:#2b3a4a;margin-bottom:14px}
+.ba-g{margin-bottom:14px}.ba-g .h{display:block;width:60%;height:8px;border-radius:4px;background:#566574;margin-bottom:10px}
+.ba-g span{display:flex;align-items:center;gap:8px;margin-top:8px}
+.ba-g em{width:11px;height:11px;border:1.5px solid #aeb0b5;border-radius:2px;flex:none}
+.ba-g span i{height:6px;border-radius:3px;background:#dfe5ec;flex:1;max-width:70%}
+.ba-dim{position:absolute;inset:0;z-index:2;background:rgba(10,20,40,.5);opacity:1;transition:opacity .55s var(--ease);pointer-events:none}
+.ba[data-mode=after] .ba-dim{opacity:0}
+.ba .cap{margin-top:16px;position:relative;min-height:1.6em}
+.ba .cap span{display:none}
+.ba[data-mode=before] .cap [data-c=before],.ba[data-mode=after] .cap [data-c=after]{display:inline;animation:capIn .4s var(--ease)}
+@keyframes capIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(max-width:560px){.ba-ctl button{padding:10px 12px;font-size:13px}.ba[data-mode=after] .ba-res{padding-left:calc(38% + 10px)}.ba-side{width:38%;padding:12px}}
+
+/* ===== sliding tab pill, chips pill, count up, headline reveal ===== */
+.tabs{position:relative}
+.tabs .tp{position:absolute;z-index:0;top:0;left:0;height:100%;border-radius:100px;background:#212121;pointer-events:none;transition:transform .5s cubic-bezier(.34,1.3,.64,1),width .5s cubic-bezier(.34,1.3,.64,1);opacity:0}
+.tabs.ready .tp{opacity:1}
+.tabs.ready button{position:relative;z-index:1;background:transparent!important;transition:color .3s}
+.tabs.ready button[aria-selected=true]{color:#fff}
+.SearchResultsTabsV2{position:relative}
+.chip-pill{position:absolute;top:0;left:0;z-index:2;pointer-events:none;border:2px solid #0071bc;border-radius:4px;background:rgba(230,244,251,.55);opacity:0;transition:transform .5s cubic-bezier(.34,1.3,.64,1),width .5s cubic-bezier(.34,1.3,.64,1),opacity .2s}
+.SearchResultsTabsV2.ready .chip-pill{opacity:1}
+.SearchResultsTabsV2.ready .SearchResultsTabsV2__tab.is-active{border-color:#d6d7d9!important;background:#fff!important}
+.cms .SearchPage__results-text .num{display:inline-block}
+.cms .num.flip{animation:flipIn .45s var(--ease)}
+@keyframes flipIn{from{transform:translateY(70%);opacity:0}to{transform:none;opacity:1}}
+.Checkbox input:checked+.Checkbox__custom{animation:ckPop .35s var(--spring)}
+@keyframes ckPop{0%{transform:scale(.8)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
+.Checkbox input:checked+.Checkbox__custom::after{animation:ckDraw .3s var(--ease) .05s both}
+@keyframes ckDraw{from{clip-path:inset(0 100% 100% 0)}to{clip-path:inset(0)}}
+.DatasetResultV2__metaItem{padding:6px 8px;margin:-6px -8px;border-radius:6px;transition:background .2s}
+.DatasetResultV2__metaItem:hover{background:#eef3f8}
+.DatasetResultV2__metaItem:hover .DatasetResultV2__metaValue{color:#0071bc}
+.js .wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.js .wi{display:inline-block;transform:translateY(105%);transition:transform .9s var(--ease);transition-delay:calc(var(--i)*60ms)}
+.js .wr.in .wi{transform:none}
+@media(prefers-reduced-motion:reduce){.js .wi{transform:none;transition:none}.ba *,.tabs .tp,.chip-pill{transition:none!important;animation:none!important}}
+
+/* ===== magnetic buttons, project hover, experience spine ===== */
+.pill-o,.pill-d{transform:translate(var(--mx,0px),var(--my,0px))}
+.pill-o:hover,.pill-d:hover{transform:translate(var(--mx,0px),calc(var(--my,0px) - 2px))}
+.pill-o:active,.pill-d:active{transform:translate(var(--mx,0px),var(--my,0px)) scale(.96)}
+.proj .role,.proj .desc,.proj img.lg{transition:transform .5s var(--ease)}
+.proj:hover .role,.proj:hover .desc,.proj:hover img.lg{transform:translateX(8px)}
+.proj:hover img.pimg,.proj:hover img[class^=wide9]{transform:scale(1.02)}
+.exp{position:relative;--sx:-26px}
+.exp .job{position:relative}
+.exp .job::before{content:"";position:absolute;left:var(--sx);top:10px;width:11px;height:11px;margin-left:-5.5px;border-radius:50%;background:#fff;border:2px solid #d2d2d7;transition:transform .45s var(--spring),background .3s,border-color .3s;z-index:1}
+.exp .job.reached::before{transform:scale(1.35);background:#212121;border-color:#212121}
+.spine{position:absolute;left:var(--sx);width:2px;margin-left:-1px;background:#e5e5ea;border-radius:2px;pointer-events:none}
+.spine i{position:absolute;left:0;top:0;width:100%;background:#212121;border-radius:2px;height:0}
+@media(max-width:700px){.exp{--sx:-12px}}
+@media(prefers-reduced-motion:reduce){.exp .job::before{transition:none}}
+
+/* ===== nav: distinct hover vs selected, gliding pills, hover dropdown ===== */
+.nav>a,.nav summary{z-index:1}
+.nav>a:hover,.nav summary:hover,.nav .on,.nav>a:hover{background:transparent!important}
+.nav>a:hover,.nav summary:hover{transform:none}
+.nv-pill{position:absolute;top:0;left:0;height:36px;border-radius:100px;pointer-events:none;width:0;transition:transform .5s var(--ease),width .5s var(--ease),opacity .3s var(--ease)}
+.nv-sel{background:#eeeeef;z-index:0}
+.nv-hov{background:#fff;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.16),0 4px 14px -6px rgba(0,0,0,.2);z-index:0;opacity:0}
+.nav.hv .nv-hov{opacity:1}
+.nav>a:hover,.nav summary:hover{color:var(--ink)}
+.nav .on{font-weight:600}
+.nav details[open] .menu{animation:none}
+.nav details .menu{transform-origin:50% 0}
+.nav details.opening .menu{animation:menuIn .34s var(--ease) both}
+.nav details.closing .menu{animation:menuOut .22s var(--ease) both}
+@keyframes menuOut{from{opacity:1;transform:translateX(-50%)}to{opacity:0;transform:translateX(-50%) translateY(-6px) scale(.97)}}
+.nav details::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px}
+.nav details{position:relative}
+.menu a:hover{background:#f4f4f5}
+@media(prefers-reduced-motion:reduce){.nv-pill{transition:none}.nav details.opening .menu,.nav details.closing .menu{animation:none}}
