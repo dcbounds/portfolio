@@ -714,3 +714,17 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 @media(max-width:700px){.exp{--sx:-20px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
 @media(max-width:700px){.exp{--sx:-10px}.exp .job{padding-left:12px}}
 .nav{gap:12px}
+/* wireframe: real nav + hero search band, no filters button */
+.ba-bar{gap:14px;padding:12px 16px}
+.ba-logo{width:64px;height:10px;background:#7f93a8}
+.ba-nl{display:flex;gap:12px}.ba-nl i{display:block;width:34px;height:6px;border-radius:3px;background:#0071bc}.ba-nl.g i{background:#b8c2cc;width:28px}
+.ba-sp{flex:1}
+.ba-ic{width:12px;height:12px;border-radius:50%;border:2px solid #0071bc;box-sizing:border-box}
+.ba-body{padding:0;min-height:clamp(340px,46vw,430px)}
+.ba-hero{background:#0b1b33;padding:16px 16px 18px;display:flex;flex-direction:column;gap:9px}
+.ba-hl{width:22%;height:5px;border-radius:3px;background:#5d7390}
+.ba-hs{height:12px;border-bottom:1.5px solid #5d7390;width:60%;position:relative}
+.ba-hs::before{content:"";position:absolute;left:0;bottom:3px;width:42%;height:6px;border-radius:3px;background:#8fa3bb}
+.ba-res{margin:14px}
+.ba[data-mode=after] .ba-side{top:calc(14px + 66px + 14px)}
+@media(max-width:560px){.ba-nl.g,.ba-nl:not(.g) i:nth-child(3){display:none}.ba[data-mode=after] .ba-side{top:94px}}
