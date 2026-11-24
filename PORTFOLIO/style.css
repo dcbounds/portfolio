@@ -804,3 +804,6 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .jg.two{grid-template-columns:1fr 1fr}
 @media(max-width:900px){.kpis.k4{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.spc,.jg.two{grid-template-columns:1fr}.jg.ph2{gap:10px}}
+.case .s.col>p.sn{font:600 14px/1 Inter,sans-serif;color:var(--ac,#e8590c);letter-spacing:.04em;margin:64px 0 10px;max-width:none}
+.case .s.col>h2+p.sn{margin-top:28px}
+.case .s.col>p.sn+h3{margin-top:0}
