@@ -830,3 +830,17 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .proj.p1{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
 .proj.p2{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
 }
+
+/* home desktop: videography and brand strategy follow the same alternating layout, images cropped to fit */
+@media(min-width:1001px){
+.proj.p3,.proj.p4{display:grid;column-gap:clamp(40px,5vw,80px);align-content:center;align-items:start}
+.proj.p3{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+.proj.p4{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+.proj.p3>*,.proj.p4>*{justify-self:start}
+.proj.p3>*{grid-column:1}
+.proj.p4>*{grid-column:2}
+.proj.p3>img,.proj.p4>img{position:static;left:auto;transform:none;width:100%;max-width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin-top:0;grid-row:1/span 6;align-self:center;justify-self:stretch;border-radius:14px}
+.proj.p3>img{grid-column:2}
+.proj.p4>img{grid-column:1}
+.proj:hover>img.wide956,.proj:hover>img.wide937{transform:scale(1.02)}
+}
