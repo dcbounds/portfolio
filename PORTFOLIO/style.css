@@ -866,3 +866,8 @@ body.home .col{max-width:1056px}
 body.home .projects.col{width:min(1056px,calc(100vw - 2*var(--pad)))}
 body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 }
+
+/* photography gallery */
+.pgal{columns:3;column-gap:16px;margin-top:40px;max-width:none}
+.pgal img{width:100%;height:auto;display:block;margin:0 0 16px;border-radius:var(--r-md);break-inside:avoid;background:#f4f4f5}
+@media(max-width:700px){.pgal{columns:2;column-gap:12px}.pgal img{margin-bottom:12px}}
