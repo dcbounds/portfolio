@@ -882,3 +882,4 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 @media(max-width:700px){.lb-p{left:8px}.lb-n{right:8px}.lb-x{top:12px;right:12px}}
 @media(prefers-reduced-motion:reduce){.lb{animation:none}}
 @media(min-width:1101px){body.home .ai-in{max-width:1056px}}
+.case .glance.col{max-width:880px}
