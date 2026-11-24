@@ -557,8 +557,8 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .menu a:hover::after{opacity:.6;transform:none}
 .menu a:active{transform:scale(.98)}
 .pill-o:active,.pill-d:active{transform:scale(.96)}
-.pill-o:hover{transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(0,0,0,.35)}
-.pill-d:hover{box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.pill-o:hover{transform:translateY(-2px)}
+
 .pill-o:focus-visible,.pill-d:focus-visible,.nav a:focus-visible,.nav summary:focus-visible,.cb-link:focus-visible{outline:2px solid #0071e3;outline-offset:3px}
 .pill-d:hover::after{width:20px;opacity:1;margin-left:10px}
 .tabs button,.tabs a{transition:background .25s var(--ease),color .25s,transform .25s var(--ease)}
