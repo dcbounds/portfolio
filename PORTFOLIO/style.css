@@ -658,7 +658,7 @@ body.home .exp{margin-top:clamp(80px,10vw,128px)}
 .pill-o:hover,.pill-d:hover{transform:translate(var(--mx,0px),calc(var(--my,0px) - 2px))}
 .pill-o:active,.pill-d:active{transform:translate(var(--mx,0px),var(--my,0px)) scale(.96)}
 .proj .role,.proj .desc,.proj img.lg{transition:transform .5s var(--ease)}
-.proj:hover .role,.proj:hover .desc,.proj:hover img.lg{transform:translateX(8px)}
+.proj:hover .role,.proj:hover .desc{transform:translateX(8px)}
 .proj:hover img.pimg,.proj:hover img[class^=wide9]{transform:scale(1.02)}
 .exp{position:relative;--sx:-26px}
 .exp .job{position:relative}
