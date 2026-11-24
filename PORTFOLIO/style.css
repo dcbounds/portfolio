@@ -939,3 +939,6 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 .ai-grid p{margin-top:0;max-width:420px}
 @media(max-width:820px){.ai-grid article{grid-template-columns:48px 1fr;row-gap:6px}.ai-grid article p{grid-column:2}}
 @media(max-width:700px){.ai-grid article{grid-template-columns:1fr;padding:24px 0}.ai-grid article p{grid-column:auto}}
+.herosq{display:block;width:420px;max-width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r-md)}
+.case .chd.chd2 .herosq{margin-top:56px}
+@media(max-width:700px){.case .chd.chd2 .herosq{margin-top:32px}}
