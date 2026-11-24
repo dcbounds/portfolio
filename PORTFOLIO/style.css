@@ -809,7 +809,7 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .case .s.col>p.sn+h3{margin-top:0}
 
 /* home: alternate image sides on desktop, image after button on tablet and mobile */
-@media(min-width:1001px){
+@media(min-width:1101px){
 .proj.p1,.proj.p2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-content:center;align-items:start}
 .proj.p1>*,.proj.p2>*{grid-column:1;justify-self:start}
 .proj.p1>.pimg,.proj.p2>.pimg{grid-column:2;grid-row:1/span 6;margin-top:0;align-self:center;justify-self:stretch}
@@ -825,17 +825,17 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 @media(max-width:700px){.exp{--sx:7px}.exp .job{padding-left:28px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
 
 /* home: wider projects block on desktop so the images can be larger */
-@media(min-width:1001px){
+@media(min-width:1101px){
 .projects{width:min(1280px,calc(100vw - 2*var(--pad)));max-width:none;margin-left:auto;margin-right:auto}
-.proj.p1{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
-.proj.p2{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+.proj.p1{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.proj.p2{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
 }
 
 /* home desktop: videography and brand strategy follow the same alternating layout, images cropped to fit */
-@media(min-width:1001px){
+@media(min-width:1101px){
 .proj.p3,.proj.p4{display:grid;column-gap:clamp(40px,5vw,80px);align-content:center;align-items:start}
-.proj.p3{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
-.proj.p4{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+.proj.p3{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.proj.p4{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
 .proj.p3>*,.proj.p4>*{justify-self:start}
 .proj.p3>*{grid-column:1}
 .proj.p4>*{grid-column:2}
@@ -844,3 +844,5 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .proj.p4>img{grid-column:1}
 .proj:hover>img.wide956,.proj:hover>img.wide937{transform:scale(1.02)}
 }
+
+@media(min-width:1101px){.proj.p3 .pt,.proj.p4 .pt{font-size:clamp(34px,3.4vw,48px)}.proj .desc{max-width:100%}}
