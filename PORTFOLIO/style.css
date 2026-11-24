@@ -764,3 +764,16 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .cms .DatasetResultV2__metaItem:hover{background:#e6f4fb;box-shadow:0 0 0 1px rgba(0,113,188,.35),0 6px 14px -6px rgba(0,113,188,.35);transform:translateY(-2px)}
 .cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaValue,.cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaValue p{color:#0071bc}
 .cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaLabel{color:#212121}
+
+/* ===== one left edge: sections, subsections and media share the same 880 container ===== */
+.case .s.col,.case .qt.col{max-width:880px}
+.case .s.col>:is(h2,h3,h4,p,ul,ol,blockquote){max-width:672px}
+.case .s.col>.ba,.case .s.col>.gal,.case .s.col>.full,.case .s.col>img,.case .s.col>.row,.case .s.col>.ph{max-width:none}
+.case .gal{width:100%;left:auto;transform:none}
+.case .prob h2,.case .prob p,.case .prob .cl{max-width:672px}
+/* major sections get a divider; numbered subsections stay inside them */
+.case .s:has(>h2){margin-top:72px;padding-top:72px;border-top:1px solid #e8e8ed}
+.case .s.first,.case .s.first:has(>h2){margin-top:56px;padding-top:0;border-top:0}
+.case .s:has(>h2).last{border-bottom:0}
+.cmpx .ctext h3{font-size:clamp(20px,2vw,24px)}
+@media(max-width:700px){.case .s:has(>h2){margin-top:48px;padding-top:48px}}
