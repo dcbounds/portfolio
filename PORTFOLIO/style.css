@@ -778,3 +778,14 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .cmpx .ctext h3{font-size:clamp(20px,2vw,24px)}
 @media(max-width:700px){.case .s:has(>h2){margin-top:48px;padding-top:48px}}
 .case .s.col>p.cap{max-width:none;text-align:left}
+/* joolep 2.0 screens */
+.jg{display:grid;gap:12px;margin-top:20px}
+.jg.duo{grid-template-columns:minmax(0,3fr) minmax(0,1fr);align-items:start}
+.jg.tri{grid-template-columns:repeat(3,minmax(0,1fr))}
+.jg img{display:block;width:100%;height:auto;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.jg p.cap{margin:10px 0 0;max-width:none}
+.case .s.col>h3{margin-top:56px}
+.case .s.col>h2+h3{margin-top:24px}
+.glance dd.stat{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.glance dd.stat .status{transform:scale(.85);transform-origin:left center}
+@media(max-width:700px){.jg.duo{grid-template-columns:1fr}.jg.tri{grid-template-columns:1fr;max-width:320px;margin-inline:auto}}
