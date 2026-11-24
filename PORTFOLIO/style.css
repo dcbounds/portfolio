@@ -858,3 +858,4 @@ body.home .projects.col{width:min(1120px,calc(100vw - 2*var(--pad)))}
 .proj.p1>.pimg{justify-self:stretch}
 .proj.p3>.pt,.proj.p4>.pt{font-size:clamp(34px,3.6vw,48px)}
 }
+@media(min-width:1101px){.proj+.proj{margin-top:200px}}
