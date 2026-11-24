@@ -78,7 +78,7 @@ h1{font:600 clamp(44px,7.7vw,96px)/1.2 Inter;color:var(--ink);text-wrap:balance}
 .proj.p4 .role{margin-top:24px}.proj.p4 .pill-d{margin-top:24px}
 .badge{display:flex;align-items:center;gap:15px;margin-top:32px}
 .badge p{font:500 18px/21.6px Nunito Sans;color:var(--g3);letter-spacing:-.09px;max-width:144px}
-.pimg{width:100%;margin-top:55px}.p2 .pimg{margin-top:0;margin-bottom:57px}
+.pimg{width:100%;margin-top:55px}.p2 .pimg{margin-top:55px}
 .p2 .lg{max-width:100%}
 .proj{position:relative}
 .proj img[class^=wide9]{margin-top:29px;max-width:none;width:min(956px,calc(100vw - 2*var(--pad)));position:relative;left:50%;transform:translateX(-50%);align-self:flex-start}
