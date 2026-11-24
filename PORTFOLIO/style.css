@@ -918,3 +918,16 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 .hero880{display:block;width:880px;max-width:100%;height:auto;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.08)}
 .case .chd.chd2 .hero880{margin-top:56px}
 @media(max-width:700px){.case .chd.chd2 .hero880{margin-top:32px}}
+
+/* smooth tabs: gliding tab shape + eased panel handoff */
+.case .tabs .tp{display:block;box-sizing:border-box;z-index:0;top:0;left:0;background:#fff;border:1px solid #d9d9de;border-bottom:0;border-radius:12px 12px 0 0;pointer-events:none;opacity:0;will-change:transform,width;transition:transform .6s cubic-bezier(.22,1,.36,1),width .6s cubic-bezier(.22,1,.36,1)}
+.case .tabs.ready .tp{opacity:1}
+.case .tabs [role=tab],.case .tabs.ready button{height:48px;font-weight:600;transition:color .35s cubic-bezier(.22,1,.36,1),background .35s}
+.case .tabs [role=tab][aria-selected=true],.case .tabs.ready button[aria-selected=true]{height:48px;background:transparent!important;border-color:transparent;color:var(--ink)}
+.case .tabs [role=tab][aria-selected=false]{color:var(--g1)}
+.case .tabs [role=tab][aria-selected=false]:hover{color:var(--ink)}
+[role=tabpanel]{animation:tabIn .6s cubic-bezier(.22,1,.36,1) both}
+@keyframes tabIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+[role=tabpanel].leaving{animation:none;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-out,transform .18s ease-out}
+@media(max-width:700px){.case .tabs [role=tab],.case .tabs.ready button,.case .tabs [role=tab][aria-selected=true]{height:44px}}
+@media(prefers-reduced-motion:reduce){[role=tabpanel]{animation:none}.case .tabs .tp{transition:none}}
