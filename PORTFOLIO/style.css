@@ -847,3 +847,4 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 
 @media(min-width:1101px){.proj.p3 .pt,.proj.p4 .pt{font-size:clamp(34px,3.4vw,48px)}.proj .desc{max-width:100%}}
 @media(min-width:1101px){body.home .projects.col{width:min(1280px,calc(100vw - 2*var(--pad)));max-width:none}}
+@media(min-width:1101px){.proj.p1>.pimg{max-width:520px;justify-self:center}}
