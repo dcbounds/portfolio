@@ -133,3 +133,15 @@ function upd(){var e=sp.getBoundingClientRect();var mid=window.innerHeight*.6;va
 layout();upd();window.addEventListener("resize",function(){layout();upd()});var tk=false;window.addEventListener("scroll",function(){if(tk)return;tk=true;requestAnimationFrame(function(){upd();tk=false})},{passive:true});
 setTimeout(function(){layout();upd()},800)})();
 })();
+
+/* photo gallery lightbox */
+(function(){var g=document.querySelector(".pgal");if(!g)return;var imgs=[].slice.call(g.querySelectorAll("img")),i=0,box=null,im=null,last=null;
+function build(){box=document.createElement("div");box.className="lb";box.setAttribute("role","dialog");box.setAttribute("aria-modal","true");box.setAttribute("aria-label","Photo viewer");box.hidden=true;
+box.innerHTML='<button class="lb-x" aria-label="Close">×</button><button class="lb-p" aria-label="Previous photo">‹</button><img alt=""><button class="lb-n" aria-label="Next photo">›</button>';document.body.appendChild(box);im=box.querySelector("img");
+box.addEventListener("click",function(e){if(e.target===box||e.target.classList.contains("lb-x"))close()});box.querySelector(".lb-p").addEventListener("click",function(){go(-1)});box.querySelector(".lb-n").addEventListener("click",function(){go(1)})}
+function show(){im.src=imgs[i].currentSrc||imgs[i].src;im.alt=imgs[i].alt}
+function go(d){i=(i+d+imgs.length)%imgs.length;show()}
+function open(n){if(!box)build();i=n;last=document.activeElement;show();box.hidden=false;document.documentElement.style.overflow="hidden";box.querySelector(".lb-x").focus()}
+function close(){box.hidden=true;document.documentElement.style.overflow="";if(last)last.focus()}
+imgs.forEach(function(el,n){el.tabIndex=0;el.setAttribute("role","button");el.addEventListener("click",function(){open(n)});el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();open(n)}})});
+document.addEventListener("keydown",function(e){if(!box||box.hidden)return;if(e.key==="Escape")close();else if(e.key==="ArrowRight")go(1);else if(e.key==="ArrowLeft")go(-1)})})();
