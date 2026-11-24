@@ -823,3 +823,10 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .exp .job{padding-left:40px}
 .spine i{border-radius:2px 2px 0 0}
 @media(max-width:700px){.exp{--sx:7px}.exp .job{padding-left:28px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
+
+/* home: wider projects block on desktop so the images can be larger */
+@media(min-width:1001px){
+.projects{width:min(1280px,calc(100vw - 2*var(--pad)));margin-left:calc(50% - min(640px,(100vw - 2*var(--pad))/2))}
+.proj.p1{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+.proj.p2{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+}
