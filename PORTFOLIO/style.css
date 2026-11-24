@@ -817,3 +817,9 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .proj.p2>.pimg{grid-column:1}
 .proj.p1>.badge{justify-self:start}
 }
+
+/* timeline inside the margins: dots sit on the content edge, text is indented */
+.exp{--sx:9px}
+.exp .job{padding-left:40px}
+.spine i{border-radius:2px 2px 0 0}
+@media(max-width:700px){.exp{--sx:7px}.exp .job{padding-left:28px}.exp .job::before{width:10px;height:10px}.exp .job.reached::before{width:14px;height:14px}}
