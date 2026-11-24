@@ -942,3 +942,5 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 .herosq{display:block;width:800px;max-width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r-md)}
 .case .chd.chd2 .herosq{margin-top:56px}
 @media(max-width:700px){.case .chd.chd2 .herosq{margin-top:32px}}
+/* videography heroes align with the 880 content column and tab bar */
+.case .chd.chd2 .herosq,.case .chd.chd2 .hero800{width:880px;max-width:100%}
