@@ -777,3 +777,4 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .case .s:has(>h2).last{border-bottom:0}
 .cmpx .ctext h3{font-size:clamp(20px,2vw,24px)}
 @media(max-width:700px){.case .s:has(>h2){margin-top:48px;padding-top:48px}}
+.case .s.col>p.cap{max-width:none;text-align:left}
