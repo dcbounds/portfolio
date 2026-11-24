@@ -915,3 +915,6 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 .case .tabs [role=tab]:active{transform:none}
 .case .glance+.s:has(>h2){margin-top:32px}
 @media(max-width:700px){.case .tabs [role=tab]{padding:0 16px;font-size:15px;height:44px}.case .tabs [role=tab][aria-selected=true]{height:45px}.case .tabs{margin-top:36px}}
+.hero880{display:block;width:880px;max-width:100%;height:auto;border-radius:var(--r-md);box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.case .chd.chd2 .hero880{margin-top:56px}
+@media(max-width:700px){.case .chd.chd2 .hero880{margin-top:32px}}
