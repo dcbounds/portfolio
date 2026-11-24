@@ -759,3 +759,8 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .ba-hs{width:56%}
 .ba[data-mode=after] .ba-side{top:78px}
 @media(max-width:560px){.ba[data-mode=after] .ba-side{top:78px}}
+/* dataset facts: clearer hover */
+.cms .DatasetResultV2__metaItem{cursor:default;transition:background .25s var(--ease),box-shadow .25s var(--ease),transform .25s var(--ease)}
+.cms .DatasetResultV2__metaItem:hover{background:#e6f4fb;box-shadow:0 0 0 1px rgba(0,113,188,.35),0 6px 14px -6px rgba(0,113,188,.35);transform:translateY(-2px)}
+.cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaValue,.cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaValue p{color:#0071bc}
+.cms .DatasetResultV2__metaItem:hover .DatasetResultV2__metaLabel{color:#212121}
