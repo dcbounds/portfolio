@@ -754,3 +754,8 @@ h3.plat .status{margin-left:14px;vertical-align:middle;font-size:15px}
 .vs-r b{font:600 14px/1.45 Inter;color:var(--ink)}
 .vs-r .n{color:var(--ink);font-weight:700;position:relative}
 @media(max-width:700px){.vs-h{display:none}.vs-r{grid-template-columns:1fr;gap:8px;padding:20px}.vs-r span:not(.n)::before{content:"1.0 and mobile app";display:block;font:600 11px/1 Inter;letter-spacing:.06em;text-transform:uppercase;color:var(--g3);margin-bottom:4px}.vs-r .n::before{content:"2.0 web app";display:block;font:600 11px/1 Inter;letter-spacing:.06em;text-transform:uppercase;color:#3a8c00;margin-bottom:4px}}
+/* wireframe: centered search in the hero band, sidebar top lines up with the first card */
+.ba-hero{box-sizing:border-box;height:64px;padding:0 16px;justify-content:center;align-items:center;gap:8px}
+.ba-hs{width:56%}
+.ba[data-mode=after] .ba-side{top:78px}
+@media(max-width:560px){.ba[data-mode=after] .ba-side{top:78px}}
