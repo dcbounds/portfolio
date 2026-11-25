@@ -1015,3 +1015,9 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 a.pill-o{color:var(--ink)}
 a.pill-o:hover,a.pill-o:focus-visible{color:#fff;background:var(--ink)}
 @media(prefers-reduced-motion:reduce){.pill-o::after,.pill-d::after{transition:none}}
+
+/* alignment: every row, grid and image line up exactly with the 880px text column */
+.case .s>.row,.case .s>.two,.case .s>.gal,.case .s>.wide{margin-left:0;margin-right:0;width:100%;max-width:none}
+.case .bleed,.case .col .bleed{width:min(880px,100vw - 2*var(--pad))}
+.case .prob .phone{margin-right:0}
+@media(max-width:700px){.case .prob .phone{margin:24px auto 0}}
