@@ -1043,3 +1043,4 @@ a.pill-o:hover,a.pill-o:focus-visible{color:#fff;background:var(--ink)}
 .case .jg{margin-top:40px;margin-bottom:56px}
 .case .jg.two{margin-top:56px}
 .case .gal+p,.case .gal+h3,.case .gal+h2{margin-top:0}
+.hero880.nostroke,.case .hero880.nostroke{box-shadow:none;border-radius:0;border:0}
