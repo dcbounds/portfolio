@@ -1000,3 +1000,6 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 .case .tabs [role=tab][aria-selected=false],.case .tabs.ready button[aria-selected=false]{border-bottom:1px solid #d9d9de}
 .case .tbx{max-width:880px;width:calc(100% - 2*var(--pad))}
 .case .tbx-in{max-width:680px}
+
+/* consistency: every section title uses the same size, in wide and narrow sections */
+.wide.s>h2,.wide>h2.x{font-family:var(--f-d);font-weight:700;font-size:var(--t-h2);line-height:1.12;letter-spacing:-.02em}
