@@ -1029,3 +1029,11 @@ a.pill-o:hover,a.pill-o:focus-visible{color:#fff;background:var(--ink)}
 .case .em>div:last-child{flex:.6242 1 0}
 .case .em img{display:block;width:100%;height:auto;border-radius:var(--r-md)}
 @media(max-width:700px){.case .em{flex-direction:column}.case .em>div{flex:none!important;width:100%}}
+
+/* TL;DR box: the Live status matches the surrounding text */
+.tbx dd.stat .status{transform:none;gap:8px}
+.tbx dd.stat .status .open{font:600 16px/1.55 var(--f-t);color:#3f9c00}
+.tbx dd.stat .status .live{width:9px;height:9px;margin:0}
+.tbx dl>div{grid-template-columns:160px minmax(0,1fr)}
+.tbx dt{white-space:nowrap}
+@media(max-width:600px){.tbx dl>div{grid-template-columns:1fr}}
