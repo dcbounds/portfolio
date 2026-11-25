@@ -1003,3 +1003,6 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 
 /* consistency: every section title uses the same size, in wide and narrow sections */
 .wide.s>h2,.wide>h2.x{font-family:var(--f-d);font-weight:700;font-size:var(--t-h2);line-height:1.12;letter-spacing:-.02em}
+
+/* hero subtitle: keep its tight, original line spacing and Inter face */
+.col p.sub,.hero p.sub{font-family:Inter,system-ui,sans-serif;line-height:1.2}
