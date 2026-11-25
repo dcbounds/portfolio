@@ -1021,3 +1021,11 @@ a.pill-o:hover,a.pill-o:focus-visible{color:#fff;background:var(--ink)}
 .case .bleed,.case .col .bleed{width:min(880px,100vw - 2*var(--pad))}
 .case .prob .phone{margin-right:0}
 @media(max-width:700px){.case .prob .phone{margin:24px auto 0}}
+
+/* eMerge photos: same height, widths follow each photo's proportions, edge to edge */
+.case .em{display:flex;align-items:flex-start;gap:24px;width:100%;max-width:none;margin:40px 0 0}
+.case .em>div{min-width:0;margin:0}
+.case .em>div:first-child{flex:1.3333 1 0}
+.case .em>div:last-child{flex:.6242 1 0}
+.case .em img{display:block;width:100%;height:auto;border-radius:var(--r-md)}
+@media(max-width:700px){.case .em{flex-direction:column}.case .em>div{flex:none!important;width:100%}}
