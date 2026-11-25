@@ -1006,3 +1006,12 @@ body.home .car-wrap{--start:max(var(--pad),calc((100vw - 1056px)/2))}
 
 /* hero subtitle: keep its tight, original line spacing and Inter face */
 .col p.sub,.hero p.sub{font-family:Inter,system-ui,sans-serif;line-height:1.2}
+
+/* outline pill: arrow slides in at the end, text never shifts, text stays readable */
+.pill-o::before{content:none!important;display:none!important}
+.pill-o{--ic:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14m-6-6 6 6-6 6'/%3E%3C/svg%3E");transition:background .25s var(--ease),color .25s var(--ease),transform .25s var(--ease)}
+.pill-o::after,.pill-d::after{content:"";display:inline-block;flex:none;width:0;height:20px;margin-left:0;background:currentColor;opacity:0;transform:translateX(-8px);transition:width .35s var(--ease),margin .35s var(--ease),opacity .25s,transform .35s var(--ease);-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+.pill-o:hover::after,.pill-o:focus-visible::after,.pill-d:hover::after,.pill-d:focus-visible::after{width:20px;margin-left:10px;opacity:1;transform:none}
+a.pill-o{color:var(--ink)}
+a.pill-o:hover,a.pill-o:focus-visible{color:#fff;background:var(--ink)}
+@media(prefers-reduced-motion:reduce){.pill-o::after,.pill-d::after{transition:none}}
